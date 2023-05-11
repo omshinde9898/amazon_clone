@@ -10,7 +10,7 @@ const userRouter = require("./routes/user");
 // INIT
 const PORT = process.env.PORT || 3000;
 const app = express();
-const DB = YOUR_DATABASE_URL
+const DB = "mongodb+srv://omshinde:warlock@cluster0.jpvlkwx.mongodb.net/?retryWrites=true&w=majority";
 
 // middleware
 app.use(express.json());
@@ -29,6 +29,6 @@ mongoose
     console.log(e);
   });
 
-app.listen(PORT, "0.0.0.0", () => {
+app.listen(PORT, "127.0.0.1", () => {
   console.log(`connected at port ${PORT}`);
 });
