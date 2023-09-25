@@ -10,7 +10,7 @@ const userRouter = require("./routes/user");
 // INIT
 const PORT = process.env.PORT || 3000;
 const app = express();
-const DB = "mongodb+srv://omshinde:warlock@cluster0.jpvlkwx.mongodb.net/?retryWrites=true&w=majority";
+const DB = "mongodb+srv://{user}:{password}@cluster0.jpvlkwx.mongodb.net/?retryWrites=true&w=majority";
 
 // middleware
 app.use(express.json());
